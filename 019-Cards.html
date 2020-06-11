@@ -1,0 +1,474 @@
+<html lang = "en">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Belajar Bootstrap 4</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Menyisipkan Bootstrap -->
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+        <!-- Link ini untuk menampilkan font dan icon -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        
+    
+
+        <style>
+            .bs-example{
+                margin: 20px;        
+            }
+        </style>
+    </head>
+    
+    <body>
+
+        <div class="bs-example">
+            <div class="card" style="width: 300px;">
+                <img src="018-Images.jpg" class="card-img-top" alt="...">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Alice Liddel</h5>
+                    <p class="card-text">Alice is a freelance web designer and developer based in London. She is specialized in HTML5, CSS3, JavaScript, Bootstrap, etc.</p>
+                    <a href="#" class="btn btn-primary">View Profile</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="bs-example">
+            <div class="card">
+                <div class="card-body">This is some text within a padded box.</div>
+            </div>
+        </div>
+
+        <div class="bs-example">
+            <div class="card text-center">
+                <div class="card-header">Featured</div>
+                <div class="card-body">
+                    <h5 class="card-title">NASA launches solar probe</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante.</p>
+                    <a href="#" class="btn btn-primary">Know more</a>
+                </div>
+                <div class="card-footer text-muted">2 days ago</div>
+            </div>
+        </div>
+
+        <div class="bs-example">
+            <div class="card" style="width: 18rem;">
+                <div class="card-header">Featured</div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Cras justo odio</li>
+                    <li class="list-group-item">Dapibus ac facilisis in</li>
+                    <li class="list-group-item">Vestibulum at eros</li>
+                </ul>
+                <div class="card-body">
+                    <a href="#" class="card-link">Add More</a>
+                    <a href="#" class="card-link">Share</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="bs-example">
+            <div class="card" style="width: 300px;">
+                <img src="018-Images.jpg" class="w-100 border-bottom" alt="Rounded Image">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Pulvinar leo id risus pellentesque el vestibulum. Sed diam libero egetve sodales sapien vel, aliquet nibhte bibendum enim porttitor orci.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Cras justo odio</li>
+                    <li class="list-group-item">Dapibus ac facilisis in</li>
+                    <li class="list-group-item">Vestibulum at eros</li>
+                </ul>
+                <div class="card-body">
+                    <a href="#" class="card-link">Card link</a>
+                    <a href="#" class="card-link">Another link</a>
+                </div>
+            </div>            
+        </div>
+
+        <div class="bs-example">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="card text-white bg-primary mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Primary card title</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card text-white bg-secondary mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Secondary card title</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card text-white bg-success mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Success card title</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card text-white bg-danger mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Danger card title</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card text-white bg-warning mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Warning card title</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card text-white bg-info mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Info card title</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor.</p>
+                        </div>
+                    </div>
+                </div>    
+                <div class="col-sm-6">
+                    <div class="card text-white bg-dark">
+                        <div class="card-body">
+                            <h5 class="card-title">Dark card title</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card bg-light">
+                        <div class="card-body">
+                            <h5 class="card-title">Light card title</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bs-example">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="card border-primary mb-4">
+                        <div class="card-body text-primary">
+                            <h5 class="card-title">Primary card title</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card border-secondary mb-4">
+                        <div class="card-body text-secondary">
+                            <h5 class="card-title">Secondary card title</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card border-success mb-4">
+                        <div class="card-body text-success">
+                            <h5 class="card-title">Success card title</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card border-danger mb-4">
+                        <div class="card-body text-danger">
+                            <h5 class="card-title">Danger card title</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card border-warning mb-4">
+                        <div class="card-body text-warning">
+                            <h5 class="card-title">Warning card title</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card border-info mb-4">
+                        <div class="card-body text-info">
+                            <h5 class="card-title">Info card title</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card border-dark mb-4">
+                        <div class="card-body text-dark">
+                            <h5 class="card-title">Dark card title</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card border-light mb-4">
+                        <div class="card-body text-muted">
+                            <h5 class="card-title">Light card title</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor.</p>
+                        </div>
+                    </div>
+                </div>        
+            </div>
+        </div>
+
+        <div class="bs-example">
+            <div class="card-group">
+                <div class="card">
+                    <img src="018-Images.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="018-Images.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Vestibulum id metus ac nisl bibendum nibh scelerisque non purus in suspendisse.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="018-Images.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Pulvinar leo id risus enim. Bibendum varius tincidunt pellentesque malesuada in.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bs-example">
+            <div class="card-deck">
+                <div class="card">
+                    <img src="018-Images.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="018-Images.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Vestibulum id metus ac nisl bibendum nibh scelerisque non purus in suspendisse.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="018-Images.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Pulvinar leo id risus enim. Bibendum varius tincidunt pellentesque malesuada in.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bs-example">
+            <div class="card-columns">
+                <div class="card">
+                    <img src="018-Images.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipi elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+                <div class="card p-3">
+                    <blockquote class="blockquote mb-0 card-body">
+                        <p>Nam eget purus consectetur in vehicula. Nullamr ultrices nisl risus, viverra libero.</p>
+                        <footer class="blockquote-footer">
+                            <small class="text-muted">Someone famous</small>
+                        </footer>
+                    </blockquote>
+                </div>
+                <div class="card">
+                    <img src="018-Images.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Vestibulum id metus ac nisl bibendum scelerisque non dignissim purus.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 2 mins ago</small></p>
+                    </div>
+                </div>
+                <div class="card bg-primary text-white text-center p-3">
+                    <blockquote class="blockquote mb-0">
+                        <p>Pulvinar leo risus vestibulum. Sed diam on sodales eget.</p>
+                        <footer class="blockquote-footer text-white">
+                            <small>Someone famous</small>
+                        </footer>
+                    </blockquote>
+                </div>
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Enim arcu, interdum dignissim venenatis velc.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 1 mins ago</small></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="018-Images.jpg" class="card-img-top" alt="...">
+                </div>
+                <div class="card p-3 text-right">
+                    <blockquote class="blockquote mb-0">
+                        <p>Quis quam ut magna consequat faucibus. Pellentesque eget nisi suscipit tincidunt. Pellentesque quam.</p>
+                        <footer class="blockquote-footer">
+                            <small class="text-muted">Someone famous</small>
+                        </footer>
+                    </blockquote>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Convallis eget pretium, bibendum non leo. Proien suscipit purus adipiscing dolor gravida fermentum sapien blandit praest interdum vel metus.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bs-example">
+            <div class="card" style="max-width: 500px;">
+                <div class="row no-gutters">
+                    <div class="col-sm-5" style="background: #868e96;">
+                        <img src="018-Images.jpg" class="card-img-top h-100" alt="...">
+                    </div>
+                    <div class="col-sm-7">
+                        <div class="card-body">
+                            <h5 class="card-title">Alice Liddel</h5>
+                            <p class="card-text">Alice is a freelance web designer and developer based in London. She is specialized in HTML5, CSS3, JavaScript, Bootstrap, etc.</p>
+                            <a href="#" class="btn btn-primary stretched-link">View Profile</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bs-example">
+            <div class="card text-white" style="width: 350px;">
+                <img src="018-Images.jpg" class="card-img-top" alt="...">
+                <div class="card-img-overlay">
+                    <h5 class="card-title">Alice Liddel</h5>
+                    <p class="card-text">Alice is a freelance web designer and developer based in London. She is specialized in HTML5, CSS3, JavaScript, Bootstrap, etc.</p>
+                    <a href="#" class="btn btn-primary stretched-link">View Profile</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="bs-example">
+            <!-- Card with default left text alignment -->
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet tempor...</p>
+                    <a href="#" class="btn btn-primary">Know more</a>
+                </div>
+            </div>
+
+            <!-- Card with center text alignment -->
+            <div class="card text-center mt-3">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Vestibulum metus bibendum nibh sapien...</p>
+                    <a href="#" class="btn btn-primary">Know more</a>
+                </div>
+            </div>
+
+            <!-- Card with right text alignment -->
+            <div class="card text-right mt-3">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Pulvinar leo id risus pellentesque diam...</p>
+                    <a href="#" class="btn btn-primary">Know more</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="bs-example">
+            <!-- Card sizing using grid markup -->
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet...</p>
+                            <a href="#" class="btn btn-primary">Know more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Vestibulum metus bibendum nibh...</p>
+                            <a href="#" class="btn btn-primary">Know more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card sizing using sizing utility classes -->
+            <div class="card w-75">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet...</p>
+                    <a href="#" class="btn btn-primary">Know more</a>
+                </div>
+            </div>
+
+            <!-- Card sizing using sizing utility classes -->
+            <div class="card" style="width: 15rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet...</p>
+                    <a href="#" class="btn btn-primary">Know more</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="bs-example">
+            <div class="card" style="width: 300px;">
+                <img src="018-Images.jpg" class="card-img-top" alt="...">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Alice Liddel</h5>
+                    <p class="card-text">Alice is a freelance web designer and developer based in London. She is specialized in HTML5, CSS3, JavaScript, Bootstrap, etc.</p>
+                    <a href="#" class="btn btn-primary stretched-link">View Profile</a>
+                </div>
+            </div>     
+        </div>
+
+        <!-- Menyisipkan Javascript Bootstrap -->
+        <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>

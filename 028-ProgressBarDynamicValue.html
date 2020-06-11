@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Changing the Value of Bootstrap 4 Progress Bar Dynamically</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<style>
+    .bs-example{
+        margin: 20px;        
+    }
+</style>
+</head>
+<body>
+<div class="bs-example">
+    <!-- Progress bar HTML -->
+    <div class="progress">
+        <div class="progress-bar progress-bar-striped" style="min-width: 20px;"></div>
+    </div>
+
+    <!-- jQuery Script -->
+    <script type="text/javascript">
+        var i = 0;
+        function makeProgress(){
+            if(i < 100){
+                i = i + 1;
+                $(".progress-bar").css("width", i + "%").text(i + " %");
+            }
+            // Wait for sometime before running this script again
+            setTimeout("makeProgress()", 100);
+        }
+        makeProgress();
+    </script>
+</div>
+</body>
+</html>

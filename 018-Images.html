@@ -1,0 +1,93 @@
+<html lang = "en">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Belajar Bootstrap 4</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Menyisipkan Bootstrap -->
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+        <!-- Link ini untuk menampilkan font dan icon -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        
+    
+
+        <style>
+            .bs-example{
+                margin: 20px;        
+            }
+        </style>
+    </head>
+    
+    <body>
+
+        <div class="bs-example">
+            <img src="D:/wilden_github/Bootstrap_Basic/018-Images.jpg" class="rounded" alt="Rounded Image">
+            <img src="018-Images.jpg" class="rounded-circle" alt="Circular Image">
+            <img src="018-Images.jpg" class="img-thumbnail" alt="Thumbnail Image">
+        </div>
+
+        <div class="bs-example">
+            <div class="alert alert-info alert-dismissible fade show">
+                <strong>Note!</strong> Open the output in a new blank tab (click the arrow button next to "Show Output") and resize the browser window to see how responsive videos work.
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+            </div>
+            
+            <h2 class="mt-4">Video with 21:9 aspect ratio</h2>
+            <div class="embed-responsive embed-responsive-21by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/YE7VzlLtp-4"></iframe>
+            </div>
+            
+            <h2 class="mt-4">Video with 16:9 aspect ratio</h2>
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/YE7VzlLtp-4"></iframe>
+            </div>
+            
+            <h2 class="mt-4">Video with 4:3 aspect ratio</h2>
+            <div class="embed-responsive embed-responsive-4by3">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/YE7VzlLtp-4"></iframe>
+            </div>
+            
+            <h2 class="mt-4">Video with 1:1 aspect ratio</h2>
+            <div class="embed-responsive embed-responsive-1by1">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/YE7VzlLtp-4"></iframe>
+            </div>
+        </div>
+
+        <div class="bs-example">
+            <!-- Horizontal alignment using float classes -->
+            <div class="box clearfix">
+                <img src="018-Images.jpg" class="pull-left" alt="Sample Image">
+                <img src="018-Images.jpg" class="pull-right" alt="Sample Image">
+            </div>
+
+            <!-- Left alignment using text alignment classes -->
+            <div class="box text-left">
+                <img src="018-Images.jpg" alt="Sample Image">
+            </div>
+
+            <!-- Right alignment using text alignment classes -->
+            <div class="box text-right">
+                <img src="018-Images.jpg" alt="Sample Image">
+            </div>
+
+            <!-- Center alignment using text alignment classes -->
+            <div class="box text-center">
+                <img src="018-Images.jpg" alt="Sample Image">
+            </div>
+
+            <!-- Center alignment of block-level image using auto margin -->
+            <div class="box">
+                <img src="018-Images.jpg" class="d-block mx-auto" alt="Sample Image">
+            </div>
+        </div>
+
+
+        <!-- Menyisipkan Javascript Bootstrap -->
+        <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>

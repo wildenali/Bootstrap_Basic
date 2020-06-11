@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Belajar Bootstrap 4</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Menyisipkan Bootstrap -->
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+        <!-- Link ini untuk menampilkan font dan icon -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <!-- Menyisipkan Javascript jquery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        
+
+        <style>
+            .bs-example{
+                margin: 20px;        
+            }
+            .bs-example a{
+                margin: 25px;
+                font-size: 24px;
+            }
+        </style>
+
+        <!-- 1 -->
+        <!-- <script>
+            $(document).ready(function(){
+                $('[data-toggle="tooltip"]').tooltip();
+            });
+        </script> -->
+        <!-- 1 -->
+
+        <!-- 2 -->
+        <!-- <script>
+            $(document).ready(function(){
+                $(".tip-top").tooltip({
+                    placement : 'top'
+                });
+                $(".tip-right").tooltip({
+                    placement : 'right'
+                });
+                $(".tip-bottom").tooltip({
+                    placement : 'bottom'
+                });
+                $(".tip-left").tooltip({
+                    placement : 'left'
+                });
+            });
+        </script> -->
+        <!-- 2 -->
+
+        <!-- 3 -->
+        <!-- <script>
+            $(document).ready(function(){
+                $("#myTooltips a").tooltip({
+                    title : "This will show in absence of title attribute."
+                });
+            });
+        </script> -->
+        <!-- 3 -->
+
+        <!-- 4 -->
+        <script>
+            $(document).ready(function(){
+                $("#myTooltip").tooltip({
+                    title: "<h4><img src='018-Images.jpg' style='width:26px;' alt='Smiley'> Hello, <b>I'm</b> <i>Smiley!</i></h4>", 	
+                    html: true, 
+                }); 
+            });
+        </script>
+        <!-- 4 -->
+
+    </head>
+    
+    <body>
+
+        <!-- 1 -->
+        <div class="bs-example">
+            <ul class="list-inline">
+                <li class="list-inline-item">
+                    <a href="#" data-toggle="tooltip" title="Default tooltip">Tooltip</a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="#" data-toggle="tooltip" title="Another tooltip">Another tooltip</a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="#" data-toggle="tooltip" title="A much longer tooltip to demonstrate the max-width of the Bootstrap tooltip.">Large tooltip</a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="#" data-toggle="tooltip" title="The last tip!">Last tooltip</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="bs-example">
+            <ul class="list-inline">
+                <li class="list-inline-item">
+                    <a href="#" data-toggle="tooltip" data-placement="top" title="Default tooltip">Tooltip</a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="#" data-toggle="tooltip" data-placement="right" title="Another tooltip">Another tooltip</a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="#" data-toggle="tooltip" data-placement="bottom" title="A much longer tooltip to demonstrate the max-width of the Bootstrap tooltip.">Large tooltip</a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="#" data-toggle="tooltip" data-placement="left" title="The last tip!">Last tooltip</a>
+                </li>
+            </ul>
+        </div>
+        <!-- 1 -->
+
+        <!-- 2 -->
+        <div class="bs-example">
+            <ul class="list-inline">
+                <li class="list-inline-item">
+                    <a href="#" data-toggle="tooltip" class="tip-top" title="Default tooltip">Tooltip</a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="#" data-toggle="tooltip" class="tip-right" title="Another tooltip">Another tooltip</a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="#" data-toggle="tooltip" class="tip-bottom" title="A much longer tooltip to demonstrate the max-width of the Bootstrap tooltip.">Large tooltip</a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="#" data-toggle="tooltip" class="tip-left" title="The last tip!">Last tooltip</a>
+                </li>
+            </ul>
+        </div>
+        <!-- 2 -->
+
+        <!-- 3 -->
+        <div class="bs-example">
+            <div id="myTooltips">
+                <a href="#" data-toggle="tooltip" title="Edit Document"><i class="fa fa-edit"></i></a>
+                <a href="#" data-toggle="tooltip" title="Save Document"><i class="fa fa-save"></i></a>
+                <a href="#" data-toggle="tooltip" title="Download Document"><i class="fa fa-download"></i></a>
+                <a href="#" data-toggle="tooltip" title="Print Document"><i class="fa fa-print"></i></a>
+                <a href="#" data-toggle="tooltip" title="Delete Document"><i class="fa fa-trash"></i></a>
+                <a href="#" data-toggle="tooltip" title="Settings"><i class="fa fa-cog"></i></a>
+            </div>
+            <br>
+            <p><strong>Note:</strong> Remove the title attribute form any link and place the mouse pointer over it to see the result.</p>    
+        </div>
+        <!-- 3 -->
+
+        <!-- 4 -->
+        <div class="bs-example">
+            <p>
+                <button type="button" class="btn btn-primary" id="myTooltip" data-toggle="tooltip">HTML Tooltip Example</button>
+            </p>
+        </div>
+        <!-- 4 -->
+
+        <div class="bs-example">
+            
+        </div>
+
+        <div class="bs-example">
+            
+        </div>
+
+        <div class="bs-example">
+            
+        </div>
+       
+    </body>
+</html>

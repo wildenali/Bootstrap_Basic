@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Belajar Bootstrap 4</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Menyisipkan Bootstrap -->
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+        <!-- Link ini untuk menampilkan font dan icon -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <!-- Menyisipkan Javascript jquery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        
+
+        <style>
+            .bs-example{
+                margin: 20px;        
+            }
+            .bs-example a{
+                margin: 25px;
+                font-size: 24px;
+            }
+        </style>
+
+        <!-- 1 -->
+        <!-- <script>
+            $(document).ready(function(){
+                $('[data-toggle="popover"]').popover({
+                    placement : 'top'
+                });
+            });
+        </script> -->
+        <!-- 1 -->
+
+        <!-- 2 -->
+        <!-- <script>
+            $(document).ready(function(){
+                $('[data-toggle="popover"]').popover({
+                });
+            });
+        </script> -->
+        <!-- 2 -->
+
+        <!-- 3 -->
+        <!-- <script>
+            $(document).ready(function(){
+                $(".popover-top").popover({
+                    placement : 'top'
+                });
+                $(".popover-right").popover({
+                    placement : 'right'
+                });
+                $(".popover-bottom").popover({
+                    placement : 'bottom'
+                });
+                $(".popover-left").popover({
+                    placement : 'left'
+                });
+            });
+        </script> -->
+        <!-- 3 -->
+
+        <!-- 4 -->
+        <!-- <script>
+            $(document).ready(function(){
+                $('[data-toggle="popover"]').popover({
+                    placement : 'top'
+                });
+            });
+        </script> -->
+        <!-- 4 -->
+
+        <!-- 5 -->
+        <!-- <script>
+            $(document).ready(function(){
+                $("#myPopovers a").popover({
+                    title : 'Default Title Text'
+                });
+            });
+        </script> -->
+        <!-- 5 -->
+
+        <!-- 6 -->
+        <script>
+            $(document).ready(function(){
+                $('[data-toggle="popover"]').popover({
+                    placement : 'top',
+                    trigger: 'hover'
+                });
+            });
+        </script>
+        <!-- 6 -->
+    </head>
+    
+    <body>
+
+
+        <!-- 1 -->
+        <!-- <div class="bs-example">
+            <div class="popover-demo mb-2">
+                <button type="button" class="btn btn-primary" data-toggle="popover" title="Popover title" data-content="Default popover">Popover</button>
+                <button type="button" class="btn btn-success" data-toggle="popover" title="Popover title" data-content="Another popover">Another popover</button>
+                <button type="button" class="btn btn-info" data-toggle="popover" title="Popover title" data-content="A larger popover to demonstrate the max-width of the Bootstrap popover.">Large popover</button>
+                <button type="button" class="btn btn-warning" data-toggle="popover" title="Popover title" data-content="The last popover!">Last popover</button>
+            </div>
+            <p><strong>Note:</strong> Click on the buttons to display/hide the popover.</p>    
+        </div> -->
+        <!-- 1 -->
+        
+        <!-- 2 -->
+        <!-- <div class="bs-example">
+            <div class="popover-demo mb-2">
+                <button type="button" class="btn btn-primary" data-toggle="popover" data-placement="top" title="Popover title" data-content="Default popover">Popover</button>
+                <button type="button" class="btn btn-success" data-toggle="popover" data-placement="right" title="Popover title" data-content="Another popover">Another popover</button>
+                <button type="button" class="btn btn-info" data-toggle="popover" data-placement="bottom" title="Popover title" data-content="A larger popover to demonstrate the max-width of the Bootstrap popover.">Large popover</button>
+                <button type="button" class="btn btn-warning" data-toggle="popover" data-placement="left" title="Popover title" data-content="The last popover!">Last popover</button>
+            </div>
+            <p><strong>Note:</strong> Click on the buttons to show/hide the popover.</p>            
+        </div> -->
+        <!-- 2 -->
+
+        <!-- 3 -->
+        <!-- <div class="bs-example">
+            <div class="popover-demo mb-2">
+                <button type="button" class="btn btn-primary popover-top" data-toggle="popover" title="Popover title" data-content="Default popover">Popover</button>
+                <button type="button" class="btn btn-success popover-right" data-toggle="popover" title="Popover title" data-content="Another popover">Another popover</button>
+                <button type="button" class="btn btn-info popover-bottom" data-toggle="popover" title="Popover title" data-content="A larger popover to demonstrate the max-width of the Bootstrap popover.">Large popover</button>
+                <button type="button" class="btn btn-warning popover-left" data-toggle="popover" title="Popover title" data-content="The last popover!">Last popover</button>
+            </div>
+            <p><strong>Note:</strong> Click on the buttons to show/hide the popover.</p>
+        </div> -->
+        <!-- 3 -->
+
+        <!-- 4 -->
+        <!-- <div class="bs-example">
+            <div class="popover-demo mb-2">
+                <a href="#" class="btn btn-primary" data-toggle="popover" tabindex="0" data-trigger="focus" title="Popover title" data-content="Default popover">Popover</a>
+                <a href="#" class="btn btn-success" data-toggle="popover" tabindex="0" data-trigger="focus" title="Popover title" data-content="Another popover">Another popover</a>
+                <a href="#" class="btn btn-info" data-toggle="popover" tabindex="0" data-trigger="focus" title="Popover title" data-content="A larger popover to demonstrate the max-width of the Bootstrap popover.">Large popover</a>
+                <a href="#" class="btn btn-warning" data-toggle="popover" tabindex="0" data-trigger="focus" title="Popover title" data-content="The last tip!">Last popover</a>
+            </div>
+            <p><strong>Note:</strong> Click on the buttons to show/hide the popover.</p>
+        </div> -->
+        <!-- 4 -->
+
+        <!-- 5 -->
+        <!-- <div class="bs-example">
+            <div id="myPopovers" class="mb-2">        
+                <a href="#" class="btn btn-primary" data-toggle="popover" data-content="This is a link without title attribute. The title text of this popover is defined in JavaScript.">Popover</a>
+                <a href="#" class="btn btn-secondary" data-toggle="popover" data-content="This is another link without the title attribute. The title text of this popover is also defined in JavaScript.">Another Popover</a>
+            </div>
+            <p><strong>Note:</strong> Click on the buttons to show/hide the popover.</p>
+        </div> -->
+        <!-- 5 -->
+
+        <!-- 6 -->
+        <div class="bs-example">
+            <div class="popover-demo mb-2">
+                <button type="button" class="btn btn-primary" data-toggle="popover" title="Popover title" data-content="Default popover">Popover</button>
+                <button type="button" class="btn btn-success" data-toggle="popover" title="Popover title" data-content="Another popover">Another popover</button>
+                <button type="button" class="btn btn-info" data-toggle="popover" title="Popover title" data-content="A larger popover to demonstrate the max-width of the Bootstrap popover.">Large popover</button>
+                <button type="button" class="btn btn-warning" data-toggle="popover" title="Popover title" data-content="The last popover!">Last popover</button>
+            </div>
+            <p><strong>Note:</strong> Click on the buttons to show/hide the popover.</p>
+        </div>
+        <!-- 6 -->
+
+
+    </body>
+</html>
