@@ -1,3 +1,44 @@
 section {
     min-height: 420px;
 }
+
+.jumbotron {
+    height: 550px;
+    background-image: url('../../img/gambar9.jpg');
+    background-attachment: fixed;
+    /* background-size: cover; */
+    background-position: 0 -60px;
+    color: #eaeaea;
+    overflow: hidden;
+}
+
+.pKiri, .pKanan {
+    opacity: 0;
+    transform: translate(-50px, 0);
+    transition: 1s;
+}
+
+.pKanan {
+    transform: translate(50px, 0);
+}
+
+.pKiri.pMuncul, .pKanan.pMuncul {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.portfolio hr {
+    width: 200px;
+    border-top: 2px solid red;
+}
+
+.portfolio .thumbnail {
+    opacity: 0;
+    transform: translate(0, -40px);
+    transition: .5s;
+}
+
+.portfolio .thumbnail.muncul {
+    opacity: 1;
+    transform: translate(0, 0);
+}

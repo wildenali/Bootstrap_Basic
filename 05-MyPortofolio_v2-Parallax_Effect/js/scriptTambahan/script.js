@@ -13,20 +13,14 @@ $('.halaman-scroll').on('click', function(e) {
     // pindahkan scroll
     $('html, body').animate({
         scrollTop: elementTujuan.offset().top - 55
-    }, 1250, 'easeOutBounce');
+    }, 1250, 'easeOutBounce');       //easeOutBounce
 
     e.preventDefault();
 
 });
 
 
-// parallax effect untuk About
-$(window).on('load', function() {
-    $('.pKiri').addClass('pMuncul');
-    $('.pKanan').addClass('pMuncul');
-});
-
-// parallax effect
+// parallax effect untuk jumbotron
 $(window).scroll(function() {
     var wScroll = $(this) .scrollTop();
     // console.log(wScroll);
@@ -47,17 +41,21 @@ $(window).scroll(function() {
 
     // portfolio
     // if (wScroll > 1000) {
-    if (wScroll > $('.portfolio').offset().top - 250) {
+    if (wScroll > $('.portfolio').offset().top - 350) {
         // console.log('ok');
         
         $('.portfolio .thumbnail').each(function(i) {
             setTimeout(function() {
                 $('.portfolio .thumbnail').eq(i).addClass('muncul');
-            }, 1000 * (i+1));
+            }, 500 * (i+1));
         });
-
     }
+});
 
 
 
+// parallax effect untuk About
+$(window).on('load', function() {
+    $('.pKiri').addClass('pMuncul');
+    $('.pKanan').addClass('pMuncul');
 });
