@@ -12,8 +12,8 @@ $('.halaman-scroll').on('click', function(e) {
 
     // pindahkan scroll
     $('html, body').animate({
-        scrollTop: elementTujuan.offset().top - 70
-    }, 1250, 'swing');
+        scrollTop: elementTujuan.offset().top - 55
+    }, 1250, 'easeOutBounce');
 
     e.preventDefault();
 
