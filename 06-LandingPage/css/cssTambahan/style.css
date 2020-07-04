@@ -1,44 +1,36 @@
-section {
-    min-height: 420px;
+/* Navbar */
+.navbar-brand {
+    font-family: Viga;
+    font-size: 32px;
 }
 
-.jumbotron {
-    height: 550px;
-    background-image: url('../../img/gambar9.jpg');
-    background-attachment: fixed;
-    /* background-size: cover; */
-    background-position: 0 -60px;
-    color: #eaeaea;
-    overflow: hidden;
+
+/* Utility */
+.tombol {
+    text-transform: uppercase;
+    border-radius: 40px;
 }
 
-.pKiri, .pKanan {
-    opacity: 0;
-    transform: translate(-50px, 0);
-    transition: 1s;
-}
 
-.pKanan {
-    transform: translate(50px, 0);
-}
 
-.pKiri.pMuncul, .pKanan.pMuncul {
-    opacity: 1;
-    transform: translate(0, 0);
-}
+/* Desktop Version */
+@media (min-width: 992px) {
+    .nav-link {
+        text-transform: uppercase;
+        margin-right: 30px;
+    }
 
-.portfolio hr {
-    width: 200px;
-    border-top: 2px solid red;
-}
-
-.portfolio .thumbnail {
-    opacity: 0;
-    transform: translate(0, -40px);
-    transition: .5s;
-}
-
-.portfolio .thumbnail.muncul {
-    opacity: 1;
-    transform: translate(0, 0);
+    /* Pakai hover ini bisa, cuma kurang aja, soalnya ga bisa pakai width */
+    /* .nav-link:hover {
+        border-bottom: 3px solid #0B63DC;
+    } */
+    .nav-link:hover::after {
+        content: '';
+        display: block;
+        border-bottom: 3px solid #0B63DC;
+        width: 50%;
+        margin: auto;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+    }
 }
